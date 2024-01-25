@@ -57,6 +57,7 @@ function getPlayerChoise(){
 
 function game(){
     let score=0;
+    let scorePlayer = 0;
     let scoreComputer = 0;
     console.log("Welcome!")
     for(let i=0;i<5;i++){
@@ -78,7 +79,7 @@ function game(){
     if(scorePlayer > scoreComputer){
         console.log("player was the winner");
     }
-    else if(scorePlayer<scoreComputer){
+    else if(scorePlayer < scoreComputer){
         console.log("computer was the winner");
 
     }
@@ -89,4 +90,4 @@ function game(){
 
 }
 game()
-getComputerChoise();
+
